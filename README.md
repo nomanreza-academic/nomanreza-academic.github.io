@@ -53,3 +53,16 @@ Open `index.html` in a web browser, or run `python -m http.server 8000` in this 
 - Includes semantic landmarks, keyboard-visible focus, skip link, reduced-motion support, responsive navigation, and readable contrast.
 - No analytics, tracking cookies, newsletter signup, or contact form.
 - Google Fonts is loaded from a third-party CDN; replace/remove the font import in `styles.css` if you want no third-party requests.
+
+
+## November 2026 update — photo and CV
+
+This version includes `assets/noman-reza-portrait.jpg` and `Mohammad_Ali_Noman_Reza_Academic_CV.pdf`. Its education and teaching sections were updated from an academic CV in the Noman user files. The public CV intentionally omits date of birth and personal referee contact details. Contact email and ORCID appear as provided in the user's academic CV; remove these from `index.html` and the PDF before publishing if you do not want them public.
+
+### Updating the already-live website
+
+Upload the contents of this folder into the **root** of the GitHub repository `nomanreza-academic/nomanreza-academic.github.io`, replacing `index.html`, `styles.css`, and `README.md` and adding the portrait JPG and CV PDF. Keep the `assets` folder structure. GitHub Pages will deploy the next commit automatically.
+
+
+## Portrait loading fix (2026-11-23)
+This version embeds the hero photo directly in `index.html` and includes essential portrait styling inside the HTML to avoid broken images and unstyled overlay text if assets are missed or browsers cache old CSS. For best results, upload **every file** in the extracted folder, replacing older files. The website still includes the original photo in `assets/` for the social preview.
