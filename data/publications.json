@@ -1,0 +1,42 @@
+[
+  {
+    "year": "2025",
+    "kind": "Peer-reviewed article",
+    "journal": "Aquaculture International",
+    "title": "The transcriptomic response of ISAV and IPNV infection in Atlantic salmon cells",
+    "authors": "Mohammad Ali Noman Reza, Thomas Nelson Harvey, Amr Ahmed Abdelrahim Gamil, Øystein Evensen, Gareth Benjamin Gillard, and Guro Katrine Sandvik",
+    "url": "https://doi.org/10.1007/s10499-025-02326-9"
+  },
+  {
+    "year": "2024",
+    "kind": "Peer-reviewed article",
+    "journal": "Marine Biotechnology",
+    "title": "Exploring the Use of Alternative Promoters for Enhanced Transgene and sgRNA Expression in Atlantic Salmon Cells",
+    "authors": "Mohammad Ali Noman Reza, Thomas Nelson Harvey, Axmee Regmi, Jacob Seilø Torgersen, and Guro Katrine Sandvik",
+    "url": "https://doi.org/10.1007/s10126-024-10362-4"
+  },
+  {
+    "year": "2025",
+    "kind": "Preprint",
+    "journal": "bioRxiv",
+    "title": "Investigating antiviral pathways in Atlantic salmon cells through interferon receptor knockouts via CRISPR-Cas9",
+    "authors": "Mohammad Ali Noman Reza, Thomas Nelson Harvey, Amr Ahmed Abdelrahim Gamil, Øystein Evensen, Gareth Benjamin Gillard, and Guro Katrine Sandvik",
+    "url": "https://doi.org/10.1101/2025.01.14.632998"
+  },
+  {
+    "year": "2018",
+    "kind": "Peer-reviewed article",
+    "journal": "Fish & Shellfish Immunology",
+    "title": "Molecular cloning, characterization and expression analysis of complement components in red sea bream (Pagrus major) after Edwardsiella tarda and red sea bream Iridovirus (RSIV) challenge",
+    "authors": "Mohammad Ali Noman Reza and coauthors",
+    "url": "https://doi.org/10.1016/j.fsi.2018.08.027"
+  },
+  {
+    "year": "2017",
+    "kind": "Peer-reviewed article",
+    "journal": "Comparative Biochemistry and Physiology Part B",
+    "title": "Short-term starvation and realimentation helps stave off Edwardsiella tarda infection in red sea bream (Pagrus major)",
+    "authors": "Sipra Mohapatra, Tapas Chakraborty, Mohammad Ali Noman Reza and coauthors",
+    "url": "https://doi.org/10.1016/j.cbpb.2017.01.009"
+  }
+]
