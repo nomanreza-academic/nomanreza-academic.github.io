@@ -1,68 +1,29 @@
-# Mohammad Ali Noman Reza — Academic Portfolio
+# Noman Reza — easy-to-edit academic website
 
-A responsive, static academic website. No paid hosting, build tools, backend, or JavaScript framework is required.
+This keeps your existing modern academic homepage and adds an editing dashboard through **Pages CMS**. Your site stays hosted free on GitHub Pages; Pages CMS edits the `data/*.json` files and commits them to GitHub.
 
-## Preview locally
+## One-time installation
 
-Open `index.html` in a web browser, or run `python -m http.server 8000` in this folder and visit `http://localhost:8000`.
+1. Open your repository: https://github.com/nomanreza-academic/nomanreza-academic.github.io
+2. Upload **everything inside this ZIP**, not the parent folder or the ZIP itself. In the GitHub file upload page, drag the contents (including `data/` and `media/`) into the upload area. **The hidden `.pages.yml` file is essential**; on Windows you may need to turn on "Show hidden files" or upload it manually.
+3. Verify the repository root contains `index.html`, `editable-content.js`, `.pages.yml`, and the `data` and `media` folders.
+4. Wait for GitHub Pages deployment, and check https://nomanreza-academic.github.io/
+5. Open https://app.pagescms.org/ and sign in using GitHub. Authorize/install the Pages CMS GitHub app **only for your website repository**, if offered. Choose `nomanreza-academic.github.io` on the `main` branch.
+6. Open **Home page, photo and contact** to edit your introduction and photo; or open **Publications**, **Research**, **Education**, **Teaching** to edit/add rows. Save (or commit) changes. GitHub Pages will redeploy.
 
-## Publish for free with GitHub Pages
+## Editing a publication
 
-1. Create a GitHub account if you do not have one.
-2. Create a public repository named `<your-username>.github.io` to publish at the root, or any other repository for a project-site URL.
-3. Upload `index.html`, `styles.css`, `script.js`, and the `assets` folder to the repository's main branch.
-4. In repository **Settings → Pages**, select **Deploy from a branch**, `main`, and `/(root)`. Save.
-5. When deployment completes, visit `https://<your-username>.github.io/` (or the relevant project-site path).
+In Pages CMS open **Publications — add or remove**, add a new list item, fill `Year`, `Publication type`, `Journal`, `Title`, `Authors`, and `DOI or website link`, and save.
 
-## Add a personal domain later
+## Editing photo or CV
 
-1. Buy a domain from a registrar of your choice.
-2. In **Settings → Pages → Custom domain**, enter the domain (e.g. `www.example.com`).
-3. Configure the DNS records per GitHub's **current official Pages custom domain documentation**. For `www`, this normally involves a CNAME record pointed at `<your-username>.github.io`; apex domains require suitable address records. Do not use placeholder IP addresses.
-4. Allow DNS verification / certificate issuance and enable **Enforce HTTPS** once available.
-5. Update canonical / social URLs when your permanent domain is chosen.
+In **Home page, photo and contact**, use **Profile photo** to upload a JPG/PNG and **Academic CV PDF** to upload a PDF. These are referenced from `data/profile.json`. Ensure you explicitly save your edits.
 
-## Details requiring owner verification
+## Important notes
 
-- Current position, employer, academic title and institutional affiliation.
-- Whether the PhD degree has been awarded, and the official date.
-- Other degrees, institutions, dates, honors.
-- Teaching experience, courses, supervision, academic service.
-- Current 2026 status of thesis Papers II and III (their status here is based **only** on the 2025 thesis).
-- Preferred public email, Google Scholar, ORCID, LinkedIn, CV PDF, headshot.
-- Optional: full list of publications, conference presentations, grants, awards, projects and downloadable thesis.
-
-**Important:** Placeholder text is intentionally visible, not invented. Replace it before announcing this as a complete professional profile.
-
-## Source notes
-
-- `/mnt/data/Synopsis final.pdf`: title/author/institution on PDF p. 1; list of papers on PDF p. 10; research summary on PDF pp. 11–12.
-- `/mnt/data/PhD thesis final.pptx`: title and affiliation on slide 1; research objectives and results on slides 6–35.
-- DOI links come directly from the attached thesis; journal statuses have **not** been checked on the live web.
-- Original uploaded PDF and PPTX are **not included in this website package**. The site uses an original CSS/SVG abstract illustration rather than reproducing thesis slides.
-
-## Customize
-
-- Content: `index.html`
-- Layout/colors/mobile styles: `styles.css`
-- Navigation interactions: `script.js`
-- Icon: `assets/favicon.svg`
-
-## Accessibility and privacy
-
-- Includes semantic landmarks, keyboard-visible focus, skip link, reduced-motion support, responsive navigation, and readable contrast.
-- No analytics, tracking cookies, newsletter signup, or contact form.
-- Google Fonts is loaded from a third-party CDN; replace/remove the font import in `styles.css` if you want no third-party requests.
-
-
-## November 2026 update — photo and CV
-
-This version includes `assets/noman-reza-portrait.jpg` and `Mohammad_Ali_Noman_Reza_Academic_CV.pdf`. Its education and teaching sections were updated from an academic CV in the Noman user files. The public CV intentionally omits date of birth and personal referee contact details. Contact email and ORCID appear as provided in the user's academic CV; remove these from `index.html` and the PDF before publishing if you do not want them public.
-
-### Updating the already-live website
-
-Upload the contents of this folder into the **root** of the GitHub repository `nomanreza-academic/nomanreza-academic.github.io`, replacing `index.html`, `styles.css`, and `README.md` and adding the portrait JPG and CV PDF. Keep the `assets` folder structure. GitHub Pages will deploy the next commit automatically.
-
-
-## Portrait loading fix (2026-11-23)
-This version embeds the hero photo directly in `index.html` and includes essential portrait styling inside the HTML to avoid broken images and unstyled overlay text if assets are missed or browsers cache old CSS. For best results, upload **every file** in the extracted folder, replacing older files. The website still includes the original photo in `assets/` for the social preview.
+- Please review your **public email**, CV details, DOI links, and teaching descriptions before publishing.
+- A new Pages CMS edit changes the public GitHub repository; GitHub history lets you revert mistakes.
+- The first visit may require GitHub app authorization. Pages CMS is a third-party service; grant only the repository access you need.
+- The embedded original portrait remains a fallback in `index.html`, so the homepage should still show a photo if media fails to load.
+- If you upload only `index.html` without `.pages.yml`, `editable-content.js`, and `data/`, the editing dashboard will not function.
+- If you edit the HTML manually, you may need to change the content JSON too, because CMS data takes priority after page load.
