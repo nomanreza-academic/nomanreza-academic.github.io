@@ -1,0 +1,1 @@
+document.querySelectorAll('.tech-prose pre').forEach(pre=>{const b=document.createElement('button');b.type='button';b.className='tech-copy';b.textContent='Copy code';b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(pre.innerText.trim());b.textContent='Copied';}catch(e){b.textContent='Select and copy manually';}});pre.before(b);});

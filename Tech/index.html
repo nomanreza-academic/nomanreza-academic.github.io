@@ -1,0 +1,6 @@
+---
+layout: tech-base
+title: Tech
+description: Practical technology guides and personally tested troubleshooting solutions.
+---
+<section class="page-intro container"><span class="eyebrow">TECHNOLOGY · PRACTICAL GUIDES</span><h1>Tech &amp; <em>insights.</em></h1><p class="lede">Practical technology solutions, personal experiences and step-by-step tutorials.</p></section><section class="section container tech-list"><h2>Latest articles</h2><div class="cards-grid">{% assign posts = site.tech | sort: 'date' | reverse %}{% for post in posts %}<a class="feature tech-card" href="{{ post.url | relative_url }}">{% if post.image %}<img src="{{ post.image | escape }}" alt="" loading="lazy">{% endif %}<span class="small-label">{{ post.category | escape }} · {{ post.date | date: "%b %d, %Y" }}</span><h3>{{ post.title | escape }}</h3><p>{{ post.summary | escape }}</p><span class="feature-arrow">Read article →</span></a>{% endfor %}</div></section>
