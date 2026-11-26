@@ -108,3 +108,43 @@ content:
       - { name: summary, label: Short description, type: text }
       - { name: image, label: Featured image, type: image, options: { media: photos } }
       - { name: body, label: Article content, type: rich-text }
+        - name: tech
+    label: Tech Blog
+    type: collection
+    path: _tech
+    format: yaml-frontmatter
+    filename:
+      template: "{primary}.md"
+      field: create
+    view:
+      primary: title
+      fields: [title, date, category]
+      sort: date
+      order: desc
+    fields:
+      - name: title
+        label: Blog title
+        type: string
+        required: true
+      - name: date
+        label: Publication date
+        type: date
+        required: true
+      - name: category
+        label: Category
+        type: string
+      - name: summary
+        label: Short description
+        type: text
+      - name: image
+        label: Featured image
+        type: image
+        options:
+          media: photos
+      - name: body
+        label: Article content
+        type: rich-text
+        options:
+          format: markdown
+          media: photos
+          switcher: true
