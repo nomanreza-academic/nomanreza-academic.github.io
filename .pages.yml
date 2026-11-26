@@ -95,3 +95,41 @@ content:
       - { name: description, label: Description, type: text }
       - { name: video_url, label: YouTube link or MP4 path, type: string }
       - { name: thumbnail, label: Optional preview image, type: image, options: { media: photos } }
+        - name: tech
+    label: Tech Blog
+    type: collection
+    path: _tech
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      primary: title
+      fields: [title, date, category]
+      sort: date
+      order: desc
+    fields:
+      - name: title
+        label: Blog title
+        type: string
+        required: true
+      - name: date
+        label: Publication date
+        type: date
+        required: true
+      - name: category
+        label: Category
+        type: string
+      - name: summary
+        label: Short description
+        type: text
+      - name: image
+        label: Featured image
+        type: image
+        options:
+          media: photos
+      - name: body
+        label: Article content
+        type: rich-text
+        options:
+          format: markdown
+          media: photos
+          switcher: true
